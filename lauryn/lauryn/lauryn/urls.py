@@ -20,7 +20,7 @@ from myapp.views import homepage, aboutpage, contactpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepage),
+    path('', homepage,name='index.html'),
     path('about/', aboutpage),
     path('contact/', contactpage)
 ]
